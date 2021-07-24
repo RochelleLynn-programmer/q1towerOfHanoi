@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+
+
+    <!-- Title Page-->
+    <title>Tower of Hanoi</title>
+
+    <!-- CSS-->
+    
+    <link rel="stylesheet" type="text/css" href="css/main.css" /> 
+  </head>
+
+  <body>
+    <header class='header'>
+    <h1> Tower of Hanoi Assessment</h1>
+    <h2> Completed by Rochelle Edwards</h2>
+  </header>
+  <hr class='line'>
+    <main>
+      <section class='instructions'>
+        <p>
+        The objective of the puzzle is to move the entire stack to the end location, obeying the following simple rules:
+        <ul>
+          <li>Only one disk can be moved at a time.</li>
+          <li>Each move consists of taking the upper disk from one of the stacks and placing it on top of another stack.</li>
+          <li>No disk may be placed on top of a smaller disk.</li>
+          <li>Have fun and good luck!</li>
+        </ul>
+      </p>
+    </section>
+    <hr class='line'>
+
+    <section id='gameContainer'>
+      <section id='columnContainer'>
+        <div class='column' id='startColumn'>
+          <div class='disk' id='diskOne' data-size='1'></div>
+            <div class='disk' id='diskTwo' data-size='2'></div>
+            <div class='disk' id='diskThree' data-size='3'></div>
+            <div class='disk' id='diskFour' data-size='4'></div>
+        </div>
+        <div class='column' id='midColumn'></div>
+        <div class='column' id='endColumn'></div>
+        <div class='column' id='selectionDisplay'>
+        </div>
+        
+      </section>
+    </section>
+    <section class='labels'>
+      <div id='start'>Start here</div>
+      <div id='middle'>Neutral Ground</div>
+      <div id='end'>End here</div>
+      <div id='current'>Selected Disk</div>
+    </section>
+    <div class="flexMe">
+      <button id="reset">Reset Game</button>
+    </div>
+    
+    </main>
+    <script src="code.js"></script>
+  </body>
+</html>
